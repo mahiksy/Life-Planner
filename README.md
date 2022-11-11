@@ -1,7 +1,8 @@
 # Life-Planner
 
 Rudimentary steps to use:
-Create the appropriate database 
+
+Create the appropriate database (see below)
 
 ![db](_DB_Used.png)
 
