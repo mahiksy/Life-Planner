@@ -10,9 +10,9 @@
     <div class="timeNav">
         <div class="dayNav">
             <div style="margin-left:13px;">
-                <button class="dayBottons">@previous</button>
-                <div class="displayBox"><p>Wenedsday</p></div>
-                <button class="dayBottons">@next</button>
+                <button class="dayBottons" @onclick="decrementArrayID">@previous</button>
+                <div class="displayBox"><p>@array[@arrayID]</p></div>
+                <button class="dayBottons" @onclick="IncrementArrayID">@next</button>
             </div>
         </div>
         <table style="margin-left:25px; margin-right: auto; width: 150px;">
@@ -232,4 +232,30 @@
 @code {
     string next = ">>";
     string previous = "<<";
+    int arrayID = 0;
+    string[] array = { "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" };
+
+    private void IncrementArrayID()
+    {
+        if (arrayID == 6)
+        {
+            arrayID = 0;
+        }
+        else
+        {
+            arrayID=arrayID+1;
+        }
+    }
+    private void decrementArrayID()
+    {
+        if (arrayID == 0)
+        {
+            arrayID = 6;
+        }
+        else
+        {
+            arrayID = arrayID - 1;
+        }
+    }
 }
+
