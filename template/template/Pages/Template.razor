@@ -1,0 +1,260 @@
+﻿@page "/Template"
+
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/template.css">
+</head>
+
+    <! –– information box with header and welcome box ––>
+<div class="timeDay">
+    <div class="timeNav">
+        <div class="dayNav">
+            <div style="margin-left:13px;">
+                <button class="dayBottons" @onclick="decrementArrayID">@previous</button>
+                <div class="displayBox"><p>@array[@arrayID]</p></div>
+                <button class="dayBottons" @onclick="IncrementArrayID">@next</button>
+            </div>
+        </div>
+        <table style="margin-left:25px; margin-right: auto; width: 150px;">
+            <tr>
+                <td><button class="timebuttons">00.00</button> </td>
+                <td><button class="timebuttons">12:00 </button></td>
+            </tr>
+            <tr>
+                <td><button class="timebuttons">00:30</button> </td>
+                <td><button class="timebuttons">12:30 </button></td>
+            </tr>
+            <tr>
+                <td><button class="timebuttons">01:00 </button></td>
+                <td><button class="timebuttons">13:00 </button></td>
+            </tr>
+            <tr>
+                <td><button class="timebuttons">01:30</button></td>
+                <td><button class="timebuttons">13:30 </button></td>
+            </tr>
+            <tr>
+                <td><button class="timebuttons">02:00</button></td>
+                <td><button class="timebuttons">14:00 </button></td>
+            </tr>
+            <tr>
+                <td><button class="timebuttons">02:30</button></td>
+                <td><button class="timebuttons">14:30</button> </td>
+            </tr>
+            <tr>
+                <td><button class="timebuttons">03:00</button></td>
+                <td><button class="timebuttons">15:00</button> </td>
+            </tr>
+            <tr>
+                <td><button class="timebuttons">03:30</button></td>
+                <td><button class="timebuttons">15:30 </button></td>
+            </tr>
+            <tr>
+                <td><button class="timebuttons">04:00	</button></td>
+                <td><button class="timebuttons">16:00 </button></td>
+            </tr>
+            <tr>
+                <td><button class="timebuttons">04:30 </button></td>
+                <td><button class="timebuttons">16:30</button></td>
+            </tr>
+            <tr>
+                <td><button class="timebuttons">05:00 </button></td>
+                <td><button class="timebuttons">17:00 </button></td>
+            </tr>
+            <tr>
+                <td><button class="timebuttons">05:30 </button></td>
+                <td><button class="timebuttons">17:30</button> </td>
+            </tr>
+            <tr>
+                <td><button class="timebuttons">06:00 </button></td>
+                <td><button class="timebuttons">18:00 </button></td>
+            </tr>
+            <tr>
+                <td><button class="timebuttons">06:30 </button></td>
+                <td><button class="timebuttons">18:30 </button></td>
+            </tr>
+            <tr>
+                <td><button class="timebuttons">07:00 </button></td>
+                <td><button class="timebuttons">19:00 </button></td>
+            </tr>
+            <tr>
+                <td><button class="timebuttons">07:30 </button></td>
+                <td><button class="timebuttons">19:30 </button></td>
+            </tr>
+            <tr>
+                <td><button class="timebuttons">08:00 </button></td>
+                <td><button class="timebuttons">20:00</button></td>
+            </tr>
+            <tr>
+                <td><button class="timebuttons">08:30</button></td>
+                <td><button class="timebuttons">20:30 </button></td>
+            </tr>
+            <tr>
+                <td><button class="timebuttons">09:00</button></td>
+                <td><button class="timebuttons">21:00 </button></td>
+            </tr>
+            <tr>
+                <td><button class="timebuttons">09:30</button></td>
+                <td><button class="timebuttons">21:30 </button></td>
+            </tr>
+            <tr>
+                <td><button class="timebuttons">10:00</button></td>
+                <td><button class="timebuttons">22:00 </button></td>
+            </tr>
+            <tr>
+                <td><button class="timebuttons">10:30</button></td>
+                <td><button class="timebuttons">22:30 </button></td>
+            </tr>
+            <tr>
+                <td><button class="timebuttons">11:00 </button></td>
+                <td><button class="timebuttons">23:00 </button></td>
+            </tr>
+            <tr>
+                <td><button class="timebuttons">11:30 </button></td>
+                <td><button class="timebuttons">23:30 </button></td>
+            </tr>
+        </table>
+    </div>
+</div>
+    <! –– Creating template boxes––>
+<div style="display: inline-block; float: left; width: 650px;">
+    <div class="header">
+        <div class="welcomeBox">
+            <h1 style="font-size: 25px; margin-top:5px; font-weight:bold;">Welcome Mohammed</h1>
+            <p id="note">By planning your day, you will not be stressed no more about the tasks that need to be done!</p>
+            <br>
+        </div>
+        <div class="pic3">
+            <img class="pic3" src="images/cute17.png">
+        </div>
+    </div>
+    <div class="template">
+    <div style="display: inline-block;">
+        <div class="name">
+            <h3 style="margin-left: 15px; font-size:30px; font-size:25px; font-weight:bold; margin-top:10px;">God Of War</h3>
+
+            <h4 style="margin-left: 15px; font-size: 20px; font-weight: bold; ">Game</h4>
+
+        </div>
+
+        <div class="pic2">
+            <img src="images/cute7.png" width="260px" height="230px">
+        </div>
+    </div>
+    <div class="priority">
+        <h5 style="margin-left: 15px; font-size:18px; float: left;font-weight:bold; margin-top:5px;">Prioroty</h5>
+        <div class="range-slider">
+            <input class="range" type="range" min="0" max="5" step="1" value="0">
+        </div>
+    </div>
+    <div class="description">
+        <h5 style="margin-left: 15px; float: left; font-size: 18px; font-weight: bold; margin-top: 20px;">Description</h5>
+        <div class="descBox">
+            <p style="font-size:14px;">This game is a really fun game and you need to play it with another person and the story of this game is really intresting and makes you want to play this game for days!</p>
+        </div>
+    </div>
+    <div calss="combine-bpoxes">
+        <div class="alarm">
+            <div style="display:inline-block; float:left;">
+                <h5 style="margin-left: 15px; font-size:18px; float: left;font-weight:bold; margin-top:5px;">Set Time</h5>
+                <input class="checkBox" type="checkbox">
+            </div>
+            <div class="clockBox">
+                <input class="clock" type="time" id="appt" name="appt" value="09:30" required>
+            </div>
+        </div>
+        <div class="buttonBox">
+
+            <div class="linkBox">
+                <input style="margin-left: 85px; background: #A6BCFF;" class="link-add-Bottoms" type="button" name="Links" value="Links">
+                <div class="inside-link-box">
+                    <a class="links" href="google.com"> Google</a>
+                    <a class="links" href="facebook.com">FaceBook</a>
+                    <a class="links" href="twitter.com">Twitter</a>
+                </div>
+            </div>
+            <div class="add-chat-erase-Box">
+                <input style="margin-left: 15px; background: white; margin-top: 20px;" class="link-add-Bottoms" type="button" name="Chat" value="Chat">
+                <input style="margin-top: 20px; background: white; " class="link-add-Bottoms" type="submit" name="Add" value="Add">
+                <input style="margin-top: 20px; background: white; " class="link-add-Bottoms" type="button" name="Erase" value="Erase">
+            </div>
+        </div>
+
+    </div>
+    </div>
+</div>
+    <! –– major vategory boxes ––>
+<div class="tasks">
+    <div class="major">
+        <h3 style=" font-size:30px; font-size:25px; font-weight:bold; margin-top:10px;" class="task-headers">Major Tasks</h3>
+        <table class="task-tables">
+            <tr>
+                <td><button class="task-bottons">Game</button></td>
+                <td><button class="task-bottons">Food</button></td>
+            </tr>
+            <tr>
+                <td><button class="task-bottons">Education</button></td>
+                <td><button class="task-bottons">Entertainment</button></td>
+            </tr>
+            <tr>
+                <td><button class="task-bottons">travel</button></td>
+                <td><button class="task-bottons">Firends</button></td>
+            </tr>
+            <tr>
+                <td><button class="task-bottons">Work</button></td>
+                <td><button class="task-bottons">Art</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <! –– Minor vategory boxes ––>
+    <div class="minor">
+        <h3 style=" font-size:30px; font-size:25px; font-weight:bold; margin-top:10px;" class="task-headers">Minor Tasks</h3>
+        <table class="task-tables">
+            <tr>
+                <td><button class="task-bottons">DOta2</button></td>
+                <td><button class="task-bottons">God OF War</button></td>
+            </tr>
+            <tr>
+                <td><button class="task-bottons">Mortal Combat</button></td>
+                <td><button class="task-bottons">Left For Dead</button></td>
+            </tr>
+            <tr>
+                <td><button class="task-bottons">Counter</button></td>
+                <td><button class="task-bottons">Leage of Legend</button></td>
+            </tr>
+            <tr>
+                <td><button class="task-bottons">Sims</button></td>
+                <td><button class="task-bottons">Phasmophobia</button></td>
+            </tr>
+        </table>
+    </div>
+</div>
+@code {
+    string next = ">>";
+    string previous = "<<";
+    int arrayID = 0;
+    string[] array = { "Saturday", "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday" };
+
+    private void IncrementArrayID()
+    {
+        if (arrayID == 6)
+        {
+            arrayID = 0;
+        }
+        else
+        {
+            arrayID=arrayID+1;
+        }
+    }
+    private void decrementArrayID()
+    {
+        if (arrayID == 0)
+        {
+            arrayID = 6;
+        }
+        else
+        {
+            arrayID = arrayID - 1;
+        }
+    }
+}
